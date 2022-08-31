@@ -71,4 +71,4 @@ This project is under license. Acess the file [LICENSE](https://github.com/souza
 
 
 
-<div align="right"><a href="https://github.com/souzaitor/EnC/blob/main/README.md#projects"> ⬅️ Return to menu</a></div>
+<div align="right"><a href="https://github.com/souzaitor/EnC/blob/main/README.md#projects"> ⬅️ Return to projects list</a></div>
