@@ -1,28 +1,18 @@
-# 🎅🏻 Santa Clauss Problem
+<h1 align="center"> Santa Clauss Problem </h1>
+<h3 align="center"> Project Assignment 1</h3>
+<h3 align="center"> 1001535 - Operational Systems (2020/2)</h3>
+<h4 align="center"> <a href="https://site.dc.ufscar.br/"> DC - Department of Computing</a>  </h4>
+<h4 align="center"> <a href="https://www.ufscar.br/">UFSCar - Universidade Federal de São Carlos</a>  </h4>
 
-Implementação do problema de IPC (Inter Process Communication Santa Clauss proposto durante o curso da disciplina de Sistemas Operacionais (1001535), oferecida pelo Departamento de Computação da UFSCar no semestre ENPE 2020/2
+## 🔵 Introduction
 
-<div id="top"></div>
-<!-- Sumário -->
-<details>
-  <summary>Sumário</summary>
-  <ol>
-    <li><a href="#sobre-o-projeto">💻 Sobre o Projeto</a></li>
-    <li><a href="#usando">☕ Usando o Projeto</a></li>
-    <li><a href="#Licença">📝 Licença</a></li>
-    <li><a href="#Autor">📧 Autor</a></li>
-    <li><a href="#Referências">📝 Referências</a></li>
-  </ol>
-</details>
+Implementation of the Santa Clauss IPC (Inter Process Communication) problem proposed during the Operating Systems course (1001535), offered by the Department of Computing at UFSCar in the semester 2020/2
 
-<div id="sobre-o-projeto"></div>
-<!-- ABOUT THE PROJECT -->
+## 🔵 About The Project
 
-## 💻 Sobre o Projeto
+Implementation and studying of Santa Clauss Problem proposed by William Stallings in your book Operating Systems: Internals and Design Principles. Prentice Hall, fourth edition, 2000. The implementation is based on the proposed resolution of The Little Book of Semaphores, written by Allen B. Downey.
 
-O projeto implementa e estuda o Santa Clauss Problem proposto William Stallings no seu livro Operating Systems: Internals and Design Principles. Prentice Hall, fourth edition, 2000. A implementação é baseada na resolução proposta no The Little Book of Semaphores de Allen B. Downey.
-
-A desrição literal do problema retirada do livro:
+The literal description of the problem taken from the book:
 ```
     Santa Claus sleeps in his shop at the North Pole and can only be
 awakened by either (1) all nine reindeer being back from their vaca-
@@ -39,7 +29,6 @@ the tropics, and therefore they stay there until the last possible mo-
 ment.) The last reindeer to arrive must get Santa while the others
 wait in a warming hut before being harnessed to the sleigh.
 
-
 • After the ninth reindeer arrives, Santa must invoke prepareSleigh, and
 then all nine reindeer must invoke getHitched.
 • After the third elf arrives, Santa must invoke helpElves. 
@@ -51,49 +40,34 @@ Santa should run in a loop so he can help many sets of elves.
 We can assume that there are exactly 9 reindeer, but there may be any number of elves.
 ```
 
-<p align="right">(<a href="#top">Voltar ao Topo</a>)</p>
+## 🔵 Using the Project
 
-<div id="usando"></div>
-<!-- USAGE EXAMPLES -->
-
-## ☕ Usando o Projeto
-
-Para usar o projeto bastata acessar a implementação no arquivo [Python Notebook](https://github.com/souzaitor/Santa-Clauss-Problem/blob/main/Trabalho_SO_Santa_Claus_Problem.ipynb).
+Run [python notebook file](https://github.com/souzaitor/Santa-Clauss-Problem/blob/main/Trabalho_SO_Santa_Claus_Problem.ipynb).
 
 
-<p align="right">(<a href="#top">Voltar ao Topo</a>)</p>
-
-<div id="Licença"></div>
-<!-- Licença -->
-
-## 📝 Licença
-
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/souzaitor/Santa-Clauss-Problem/blob/main/LICENSE) para mais detalhes.
-
-<p align="right">(<a href="#top">Voltar ao Topo</a>)</p>
-
-<div id="Autor"></div>
-<!-- Autor -->
-
-## 📧 Autor
+## 🔵 License
+This project is under license. Acess the file [LICENSE](https://github.com/souzaitor/Santa-Clauss-Problem/blob/main/LICENSE) for more details.
 
 
+## 🔵 Author
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/souzaitor">
+        <img src="https://avatars.githubusercontent.com/souzaitor" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <sub>
+          <b>Heitor Souza</b>
+        </sub>
+      </a>
+    </td>
+    </td>
+  </tr>
+</table>
 
-[![author](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/souzaitor)
-[![b](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itorsouza)
 
-
-<p align="right">(<a href="#top">Voltar ao Topo</a>)</p>
-
-<div id="Referências"></div>
-<!-- Referências -->
-
-## 📝 Referências
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
+## 🔵 References
 * [📚 The Little Book of Semaphores](https://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf)
 
-<p align="right">(<a href="#top">Voltar ao Topo</a>)</p>
+
 
 
