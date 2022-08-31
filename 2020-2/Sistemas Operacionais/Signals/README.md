@@ -40,4 +40,4 @@ Run the [python notebook](https://github.com/souzaitor/EnC/blob/main/2020-2/Sist
 ## Copyright 
 This project is licensed under the terms of the MIT license.
 
-<div align="right"><a href="https://github.com/souzaitor/EnC/blob/main/README.md#projects"> ⬅️ Return to projects list</a></div>
+<div align="right"><a href="https://github.com/souzaitor/EnC#projects"> ⬅️ Return to projects list</a></div>
