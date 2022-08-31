@@ -12,6 +12,7 @@ Implementation project of machine learning proposed during the course of the Art
 This project consists in the execution and validation of supervised learning algorithms for classification (decision tree) and unsupervised learning for clustering (K-means) studied in the course.
 
 Part 1 - Decision tree evaluation with metrics for classification
+
 Part 2 – Determining the best number of groups using the square sum of the distances as an index internal (“elbow” method)
 
 ## 🔵 Using the project
