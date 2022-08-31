@@ -1,84 +1,88 @@
-# Chat Zero MQ
+<h1 align="center"> Chat Zero MQ </h1>
+<h3 align="center"> Project Assignment 1</h3>
+<h3 align="center"> 1001503 - Distributed Systems (2022/1)</h3>
+<h4 align="center"> <a href="https://site.dc.ufscar.br/"> DC - Department of Computing</a>  </h4>
+<h4 align="center"> <a href="https://www.ufscar.br/">UFSCar - Universidade Federal de São Carlos</a>  </h4>
 
-Estre projeto apresenta uma implementação de um chat utilizando a biblioteca de mensagens assíncronas ZeroMQ e a arquitetura de sistemas distribuídos Publish–subscribe.
 
+## 🔵 Introduction
+This project presents an implementation of a chat using the ZeroMQ asynchronous messaging library and the Publish–subscribe distributed systems architecture.
 <div align ="center">
   
 ![fig14](https://user-images.githubusercontent.com/39158108/181029210-2793885d-6e8c-4fc4-97a9-ce8b1d27c93d.png)
   
 </div>
 
-Pub/Sub é um padrão clássico em que os remetentes de mensagens, chamados de publishers, não programam as mensagens para serem enviadas diretamente para receptores específicos, chamados de subscribers. As mensagens são publicadas sem o conhecimento do que ou se existe algum assinante desse conhecimento. O broker garante que as mensagens sejam entregar aos subscribers corretos.
+Pub/Sub is a classic pattern in which message senders, called publishers, do not schedule messages to be sent directly to specific receivers, called subscribers. Messages are published without the knowledge of what or if there is any subscriber to that knowledge. The broker ensures that messages are delivered to the correct subscribers.
 
-As operações do chat foram baseadas no Linda Tuple Space: escrever em um tópico, ler de um tópico, mensagens são tuplas com tópico, remetente e conteúdo da mensagem.  
+Chat operations were based on Linda Tuple Space: write to a topic, read from a topic, messages are tuples with topic, sender and message content. 
 
-## 📋 Pré-requisitos
+## 🔵 Requirements
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
+Before you start, make sure you've met the following requirements:
 * [Python](https://docs.python.org/3/)
 * [Zero MQ](https://zeromq.org/get-started/)
 
-## ✍️ Instalando Chat Zero MQ
+## 🔵 Installing Chat Zero MQ
 
-Para instalar o Chat Zero MQ, siga estas etapas:
+To install Chat Zero MQ, follow these steps:
 
-* Baixe ou clone o repositório atual
+* Download or clone the current repo
 
-* Altere os IPs e portas no documento `config.cfg`
+* Change the IPs and ports in the document `config.cfg`
 
-## 💻 Usando Chat Zero MQ
+## 🔵 Using Chat Zero MQ
 
-O chat é utilizado com uma instância de `pub.py` e uma instância de `sub.py` para cada usuário.
+The chat is used with an instance of `pub.py` and an instance of `sub.py` for each user.
 
-É necessário também uma instância do `broker.py`
+An instance of the `broker.py` is needed tp
 
-* As mensagens são lidas em `sub.py`
-* As mensagens são enviadas em `pub.py`
-* O encaminhamento das mensagens é feito em `broker.py`
+* Messages are read in `sub.py`
+* Messages are sent in `pub.py`
+* The forwarding of messages is done in `broker.py`
 
-Para usar Chat Zero MQ, siga estas etapas:
-### Executando Broker
+To use Chat Zero MQ, follow these steps:
+
+### Running Broker
 ```python
 python3 broker.py
 ```
-* Pelo broker é possível ver o fluxo das mensagens entre publishers e subscribers
+* Through the broker it is possible to see the flow of messages between publishers and subscribers
 <div align ="center">
   
 ![broker](https://user-images.githubusercontent.com/39158108/181051276-d9d2bba5-1008-4fc9-81ab-3293227dae86.JPG)
   
 </div>
 
-### Executando Publisher
+### Running Publisher
 ```python
 python3 pub.py
 ```
 
-* Pelo publisher é possível se inscrever em um tópico e enviar mensagens. 
-* Envia mensagens para todos os subscribers que se inscreveram no tópico.
-* Deve-se indicar o nome do usuário para que durante a leitura dos tópicos seja possível identificar o remetente da mensagem.
-* Os comandos CTRL^D ou CTRL^C terminam a execução de publisher.py
+* From the publisher it is possible to subscribe to a topic and send messages. 
+* Send messages to all subscribers who have subscribed to the topic.
+* The user's name must be indicated so that during the reading of the topics it is possible to identify the sender of the message.
+* CTRL^D or CTRL^C commands terminate execution of pub.py
 
-### Executando Subscriber
+### Running Subscriber
 ```python
 python3 sub.py
 ```
-* Pelo subscriber é possível se inscrever em um tópico e receber mensagens.
-* Recebe mensagens de todos os publishers que se inscreveram no tópico.
-* Os comandos CTRL^D ou CTRL^C terminam a execução de publisher.py.
+* Through the subscriber it is possible to subscribe to a topic and receive messages.
+* Receive messages from all publishers who have subscribed to the topic.
+* CTRL^D or CTRL^C commands terminate execution of sub.py.
 
 ![Animação](https://user-images.githubusercontent.com/39158108/181025518-553780f6-12cc-43c9-97c9-184959b7c418.gif)
 
-### Mais de um usuário em um tópico
+### More than one user on a topic
 
 ![Animação2](https://user-images.githubusercontent.com/39158108/181056789-20b64e98-bdb9-4d87-b76d-cf1c41e4f0e7.gif)
 
-### Leitura apenas do tópico inscrito
+### Read only the subscribed topic
 
 ![Animação3](https://user-images.githubusercontent.com/39158108/181062666-97797e90-5416-4e58-b12d-d6fe762d7ca2.gif)
 
-## 🤝 Colaboradores
-
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+## 🔵 Authors
 
 <table>
   <tr>
@@ -101,8 +105,8 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   </tr>
 </table>
 
-## 📝 Licença
+## 🔵 License
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/souzaitor/sistdist-p1/blob/main/LICENSE) para mais detalhes.
+This project is under license. Acess the file [LICENSE](https://github.com/souzaitor/sistdist-p1/blob/main/LICENSE) for more details.
 
-[⬆ Voltar ao topo](#Chat-Zero-MQ)<br>
+<div align="right"><a href="https://github.com/souzaitor/EnC/blob/main/README.md#projects"> ⬅️ Return to projects list</a></div>
