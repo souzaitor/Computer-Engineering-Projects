@@ -1,9 +1,8 @@
-## EnC
+<h1 align="center"> Computer Engineering Projects </h1>
+ 
+Projects developed as an Undergraduate Student in Computer Engineering at Universidade Federal de São Carlos ([UFSCar](https://www.ufscar.br/))
 
-## Projects
-
-
-
+# Projects 
 
 ## 2020/2
 ### 1001535 - Operational Systems 
