@@ -1,86 +1,40 @@
-<h1 align="center"> Chat Zero MQ </h1>
+<h1 align="center"> Panoramic Construction with SIFT </h1>
 <h3 align="center"> Project Assignment 1</h3>
-<h3 align="center"> 1001503 - Distributed Systems (2022/1)</h3>
+<h3 align="center"> 1001532 - Computer Vision (2022/1)</h3>
 <h4 align="center"> <a href="https://site.dc.ufscar.br/"> DC - Department of Computing</a>  </h4>
 <h4 align="center"> <a href="https://www.ufscar.br/">UFSCar - Universidade Federal de São Carlos</a>  </h4>
 
 
 ## 🔵 Introduction
-This project presents an implementation of a chat using the ZeroMQ asynchronous messaging library and the Publish–subscribe distributed systems architecture.
-<div align ="center">
-  
-![fig14](https://user-images.githubusercontent.com/39158108/181029210-2793885d-6e8c-4fc4-97a9-ce8b1d27c93d.png)
-  
-</div>
-
-Pub/Sub is a classic pattern in which message senders, called publishers, do not schedule messages to be sent directly to specific receivers, called subscribers. Messages are published without the knowledge of what or if there is any subscriber to that knowledge. The broker ensures that messages are delivered to the correct subscribers.
-
-Chat operations were based on Linda Tuple Space: write to a topic, read from a topic, messages are tuples with topic, sender and message content. 
+This project stitches images together to create a Panorama. Images are taken from different perspectives and transformed to fit together by using SIFT feature detection and RANSAC algorithm for homography transformations
 
 ## 🔵 Requirements
 
 Before you start, make sure you've met the following requirements:
 * [Python](https://docs.python.org/3/)
-* [Zero MQ](https://zeromq.org/get-started/)
+* [OpenCV](https://opencv.org/)
 
-## 🔵 Installing Chat Zero MQ
+## 🔵 Installing Panoramic Construction with SIFT
 
-To install Chat Zero MQ, follow these steps:
+* Install requirements
+* Import [panorama.py](https://github.com/souzaitor/EnC/blob/d5136434141fad0acd34484b29ca4d97b3cc28b6/2021-1/Computer%20Vision/Panorama/panorama.py)
 
-* Download or clone the current repo
+## 🔵 Using Panoramic Construction with SIFT
 
-* Change the IPs and ports in the document `config.cfg`
+* See [example.py](https://github.com/souzaitor/EnC/blob/d5136434141fad0acd34484b29ca4d97b3cc28b6/2021-1/Computer%20Vision/Panorama/example.py) for how use the module
 
-## 🔵 Using Chat Zero MQ
+### Panoramic of image set 1
+![](pano/pano1.jpeg)
 
-The chat is used with an instance of `pub.py` and an instance of `sub.py` for each user.
+### Panoramic of image set 2
+![](pano/pano2.jpeg)
 
-An instance of the `broker.py` is needed tp
+### Panoramic of image set 3
+![](pano/pano3.jpeg)
 
-* Messages are read in `sub.py`
-* Messages are sent in `pub.py`
-* The forwarding of messages is done in `broker.py`
+### Panoramic of image set 4
+![](pano/pano4.jpeg)
 
-To use Chat Zero MQ, follow these steps:
-
-### Running Broker
-```python
-python3 broker.py
-```
-* Through the broker it is possible to see the flow of messages between publishers and subscribers
-<div align ="center">
-  
-![broker](https://user-images.githubusercontent.com/39158108/181051276-d9d2bba5-1008-4fc9-81ab-3293227dae86.JPG)
-  
-</div>
-
-### Running Publisher
-```python
-python3 pub.py
-```
-
-* From the publisher it is possible to subscribe to a topic and send messages. 
-* Send messages to all subscribers who have subscribed to the topic.
-* The user's name must be indicated so that during the reading of the topics it is possible to identify the sender of the message.
-* CTRL^D or CTRL^C commands terminate execution of pub.py
-
-### Running Subscriber
-```python
-python3 sub.py
-```
-* Through the subscriber it is possible to subscribe to a topic and receive messages.
-* Receive messages from all publishers who have subscribed to the topic.
-* CTRL^D or CTRL^C commands terminate execution of sub.py.
-
-![Animação](https://user-images.githubusercontent.com/39158108/181025518-553780f6-12cc-43c9-97c9-184959b7c418.gif)
-
-### More than one user on a topic
-
-![Animação2](https://user-images.githubusercontent.com/39158108/181056789-20b64e98-bdb9-4d87-b76d-cf1c41e4f0e7.gif)
-
-### Read only the subscribed topic
-
-![Animação3](https://user-images.githubusercontent.com/39158108/181062666-97797e90-5416-4e58-b12d-d6fe762d7ca2.gif)
 
 ## 🔵 Authors
 
@@ -94,19 +48,29 @@ python3 sub.py
         </sub>
       </a>
     </td>
-    <td align="center">
-      <a href="https://github.com/hugo-souza">
-        <img src="https://avatars.githubusercontent.com/hugo-souza" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
-        <sub>
-          <b>Hugo Souza</b>
-        </sub>
-      </a>
     </td>
   </tr>
 </table>
 
 ## 🔵 License
 
-This project is under license. Acess the file [LICENSE](https://github.com/souzaitor/sistdist-p1/blob/main/LICENSE) for more details.
+This project is under license. Acess the file [LICENSE](https://github.com/souzaitor/EnC/blob/d5136434141fad0acd34484b29ca4d97b3cc28b6/LICENSE) for more details.
+
+## 🔵 References
+
+* [Introduction to SIFT (Scale-Invariant Feature Transform) ](https://docs.opencv.org/4.x/da/df5/tutorial_py_sift_intro.html)
+
+* 📄 LOWE, David G. [**Distinctive Image Features from Scale-Invariant Keypoints**](https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf). International Journal of Computer Vision, v. 60, n. 2, p. 91–110, 2004.
+
+* 📄 REY-OTERO, Ives and DELBRACIO, Mauricio. [**Anatomy of the SIFT Method**](https://www.ipol.im/pub/art/2014/82/article.pdf). Image Processing On Line, 2014.
+
+* 📽️ [SIFT Detector | SIFT Detector](https://www.youtube.com/watch?v=ram-jbLJjFg&list=PL2zRqk16wsdqXEMpHrc4Qnb5rA1Cylrhx&index=16&ab_channel=FirstPrinciplesofComputerVision)
+
+* [OpenCV: Feature Matching + Homography to find Objects ](https://docs.opencv.org/3.4/d1/de0/tutorial_py_feature_homography.html)
+
+*  📄 D. Li, D. Han, X. Zhang and L. Zhang, [**Panoramic image mosaic technology based on SIFT algorithm in power monitoring**](https://ieeexplore.ieee.org/document/9010294), 2019 6th International Conference on Systems and Informatics (ICSAI), 2019, pp. 1329-1333, doi: 10.1109/ICSAI48974.2019.9010294.
+
+
+* [stackoverflow: how to show the whole image when using opencv warpperspective](https://stackoverflow.com/questions/13063201/how-to-show-the-whole-image-when-using-opencv-warpperspective/20355545#20355545)
 
 <div align="right"><a href="https://github.com/souzaitor/EnC/blob/main/README.md#projects"> ⬅️ Return to projects list</a></div>
