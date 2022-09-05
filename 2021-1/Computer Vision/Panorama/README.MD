@@ -42,12 +42,19 @@ Before you start, make sure you've met the following requirements:
   <tr>
     <td align="center">
       <a href="https://github.com/souzaitor">
-        <img src="https://avatars.githubusercontent.com/souzaitor" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/souzaitor" width="100px;" alt=""/><br>
         <sub>
           <b>Heitor Souza</b>
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/gustavochavari">
+        <img src="https://avatars.githubusercontent.com/gustavochavari" width="100px;" alt=""/><br>
+        <sub>
+          <b>Gustavo Chavari</b>
+        </sub>
+      </a>
     </td>
   </tr>
 </table>
