@@ -20,6 +20,7 @@ Projects developed as an Undergraduate Student in Computer Engineering at Univer
 
 ### 1001503 - Distributed Systems 
 * Project Assignment 1: [**Chat Zero MQ**](https://github.com/souzaitor/EnC/tree/main/2021-1/Distributed%20Systems#-chat-zero-mq-)
+* Project Assignment 2: [**Inventory Distributed Management**](https://github.com/souzaitor/Inventory-Distributed-Management)
 
 ### 1001505 - Communication Technology
 * Project Assignment 1: [**Modulation/Demodulation**](https://github.com/souzaitor/Computer-Engineering-Projects/tree/main/2021-1/Communication%20Technology/Modulation%20and%20Demodulation)
