@@ -27,3 +27,7 @@ Projects developed as an Undergraduate Student in Computer Engineering at Univer
 
 ### 1001538 - Embedded Computer Systems Project
 * Project Assignment: [**RaspberryPi Fingerprint Access Control**](https://github.com/souzaitor/RaspberryPi-Access-Control)
+
+## 2022/2
+### 1001499  - Introduction to Music Computing
+* [**Notes and activities**](https://github.com/souzaitor/Computer-Engineering-Projects/tree/main/2021-2/Intro-Musical)
