@@ -4,6 +4,9 @@ Projects developed as an Undergraduate Student in Computer Engineering at Univer
 
 # Projects 
 
+## 2020/1
+
+
 ## 2020/2
 ### 1001535 - Operational Systems 
 * Project Assignment 1: [**Santa Clauss Problem**](https://github.com/souzaitor/EnC/tree/main/2020-2/Sistemas%20Operacionais/Santa%20Clauss%20Problem)
@@ -12,6 +15,9 @@ Projects developed as an Undergraduate Student in Computer Engineering at Univer
 ### 1001336 - Artificial intelligence
 * Project Assignment 1: [**Prolog Backward Chaining**](https://github.com/souzaitor/EnC/tree/main/2020-2/Intelig%C3%AAncia%20Artifical/Prolog%20Backward%20Chaining)
 * Project Assignment 2: [**Decision Tree and Elbow Method**](https://github.com/souzaitor/EnC/tree/main/2020-2/Intelig%C3%AAncia%20Artifical/Decision%20Tree%20and%20Elbow%20Method)
+
+### 1001541 - Computer Architecture and Orgaization 2 
+* [**Notes and activities**](https://github.com/souzaitor/Computer-Engineering-Projects/tree/main/2020-2/ComputerArq2)
 
 ## 2022/1
 ### 1001532 - Computer Vision 
