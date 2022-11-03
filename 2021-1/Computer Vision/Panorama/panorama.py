@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import os
 import sys
 from imutils import paths
+import warnings
+warnings.filterwarnings("ignore")
 
 def ler_conjunto_imagens(dir):
     """
@@ -173,9 +175,13 @@ def calcular_homografia(imagem1, imagem2, num_features, niveis_oitava, threshold
 
 def blendingMask(height, width, barrier, smoothing_window, left_biased=True):
     assert barrier < width
+
+
     mask = np.zeros((height, width))
 
     offset = int(smoothing_window / 2)
+    print("Offset:", offset)
+
     try:
         if left_biased:
             mask[:, barrier - offset : barrier + offset + 1] = np.tile(
@@ -187,6 +193,7 @@ def blendingMask(height, width, barrier, smoothing_window, left_biased=True):
                 np.linspace(0, 1, 2 * offset + 1).T, (height, 1)
             )
             mask[:, barrier + offset :] = 1
+
     except BaseException:
         if left_biased:
             mask[:, barrier - offset : barrier + offset + 1] = np.tile(
@@ -221,8 +228,12 @@ def blending_panoramica(imagem2_rz, imagem1_warped, largura_imagem2, lado):
     altura, largura, _ = imagem2_rz.shape
     janela_suavizacao = int(largura_imagem2 / 8)
     barrier = largura_imagem2 - int(janela_suavizacao / 2)
+    print("Barrier:", barrier)
+    print("janela_suavizacao:", janela_suavizacao)
     mascara1 = blendingMask(altura, largura, barrier, smoothing_window=janela_suavizacao, left_biased=True)
+
     mascara2 = blendingMask(altura, largura, barrier, smoothing_window=janela_suavizacao, left_biased=False)
+ 
   
     if lado == "esquerdo":
         imagem2_rz = cv2.flip(imagem2_rz, 1)
